@@ -1,0 +1,248 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    overflow: scroll;
+}
+.headers{
+    max-width:100%;
+    height:75vh;
+}
+.navbar-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+}
+.nav-bar li{
+    display: inline;
+    padding:10px;
+}
+.nav-bar li a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.5);
+}
+.logo img{
+    width:50px;
+    border-radius: 30px;
+}
+.header-content{
+    padding:70px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-img img{
+    width:320px;
+    border-radius: 250px;
+}
+.content-data h3{
+    font-size: 50px;
+}
+.content-data h3 span{
+    color:skyblue;
+}
+.content-data p{
+    margin: 5px 0;    
+}
+.button{
+    padding-top: 15px;
+}
+.button button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+    color:rgba(0, 0, 0, 0.5);
+}
+.button .btn1{
+    background-color: skyblue;
+
+}
+.main-hero{
+    background-color: rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+.hero-section{
+    max-width: 1000px;
+    height:auto;
+    margin: 0 auto;
+    padding:70px;
+}
+.headsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headsection h3, p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+}
+.activity-section{
+    max-width: 600px;
+    display: flex;
+    height: 220px;
+    background-color: white;
+    padding:20px;
+}
+.tag{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding:8px;
+    width:auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.activ-content{
+    margin-left: 15px;
+}
+.activ-content h3{
+    font-weight: bold;
+}
+.activ-content p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+.bottom-section{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.bottom-data h4{
+    color: rgba(0, 0, 0, 0.5);
+
+}
+.bottom-section img{
+    width: 50px;
+    border-radius: 20px;
+}
+
+.footer{
+    max-width: 1000px;
+    height:auto;
+    margin: 0 auto;
+    padding:70px;
+
+
+}
+.displayyy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.st img{
+    padding-left: 50px;
+    width:200px;
+    align-items: center;
+    border-radius: 60px;
+}.st p{
+    font-size: 20px;
+    text-align: center;
+}
+.st span{
+    color: skyblue;
+}
+.nd a{
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    padding:5px;
+
+}
+.rd a{
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    padding:5px;
+}
+.flex-item{
+    float: right;
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 1100px) {
+    .headers{
+        height:70vh;
+    }
+    .content-img{
+        display: none;
+    }
+    .header-content{
+        text-align: center;
+    }
+    .headsection p{
+        display: none;
+    }
+    .activity-section{
+        text-align: center;
+        max-width: 100%;
+    }
+    .displayyy{
+        flex-direction: column;
+        gap:20px;
+    }
+}
+
+@media (max-width: 880px){
+
+    .bottom-section img{
+        display: none;
+    }
+}
+@media (max-width: 780px){
+
+    .activ-content p{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px){
+    .navbar-content{
+        margin-left: 80px;
+        display: grid;
+        text-align: center;
+    }
+    .headers{
+        height:60vh;
+    }
+    .header-content{
+        padding:20px;
+    }
+    .logo img{
+        width:80px;
+    }
+    .nav-bar{
+        font-size: 25px;
+    }
+    .content-data h3{
+        font-size: 40px;
+    }
+}
+@media (max-width: 600px){
+    
+    .activity-section{
+        height:20vh;
+    }
+    .hero-section{
+        padding: 20px;
+    }
+    .activity-section img{
+        width: 180px;
+        height: 101px;
+    }
+    .activ-content h3{
+        text-align: start;
+        font-size: 15px;
+
+    }
+    .navbar-content{
+        margin-left: 0px;}
+    .tag{
+        text-align: start;
+
+    }
+}
